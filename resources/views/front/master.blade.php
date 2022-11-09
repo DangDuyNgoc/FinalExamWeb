@@ -12,7 +12,7 @@
     {{-- <link type="text/css" rel="stylesheet" href="{{asset('/public/css/footer.css')}}"> --}}
 </head>
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid" style="background-color:#fff ">
         <div class="row align-items-center py-3 px-xl-5">
             @include('front.header')
         </div>
