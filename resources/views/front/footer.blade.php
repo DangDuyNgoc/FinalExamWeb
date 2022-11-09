@@ -83,6 +83,7 @@
             </div>
         </div>
     </div>
+
     <div class="fs-bottom">
         <div class="fs-infor">
             © 2007 - 2022 Công Ty Cổ Phần Bán Lẻ Kỹ Thuật Số IT - 4M /
@@ -96,4 +97,4 @@
 <!-- Footer End -->
 
 <!-- Back to Top -->
-<a href="#" class="btn btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+{{-- <a href="#" class="btn btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a> --}}

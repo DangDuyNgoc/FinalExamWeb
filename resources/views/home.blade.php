@@ -2,25 +2,250 @@
 @section('content')
 
     <!-- Products Start -->
-    <div class="container-fluid pt-5" style="background-color: #f8f9fa">
-        <div class="text-center mb-4">
-            <h2 class="section-title px-5"><span class="px-2">Just Arrived</span></h2>
-        </div>
-        <div class="row px-xl-5 pb-3">
-            <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
-                <div class="card product-item border-0 mb-4">
-                    <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
-                        <img class="img-fluid w-100" src="{{asset('public/template/eshopper-1.0.0/img/product-1.jpg')}}" alt="">
-                    </div>
-                    <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
-                        <h6 class="text-truncate mb-3">Colorful Stylish Shirt</h6>
-                        <div class="d-flex justify-content-center">
-                            <h6>$123.00</h6><h6 class="text-muted ml-2"><del>$123.00</del></h6>
+    <div class="row tspbox">
+        <div class="col-3 tsp-left">
+            <div class="filter">
+                <div class="filter__block">
+                    <div class="filter__title">Hãng sản xuất</div>
+                    <div class="filter__checklist">
+                        <div class="checkbox checkbox-all frowitem active">
+                            <a href="" title="Tất cả">
+                                <i class="fa-regular fa-square checkbox-icon"></i>
+                                Tất cả
+                            </a>
+                        </div>
+                        <div class="checkbox frowitem">
+                            <a href="" >
+                                <i class="fa-regular fa-square checkbox-icon"></i>
+                                <label for="">Apple</label>
+                            </a>
+                        </div>
+                        <div class="checkbox frowitem">
+                            <a href="" >
+                                <i class="fa-regular fa-square checkbox-icon"></i>
+                                <label for="">Asus</label>
+                            </a>
+                        </div>
+                        <div class="checkbox frowitem">
+                            <a href="" >
+                                <i class="fa-regular fa-square checkbox-icon"></i>
+                                <label for="">HP</label>
+                            </a>
+                        </div>
+                        <div class="checkbox frowitem">
+                            <a href="" >
+                                <i class="fa-regular fa-square checkbox-icon"></i>
+                                <label for="">Dell</label>
+                            </a>
+                        </div>
+                        <div class="checkbox frowitem">
+                            <a href="" >
+                                <i class="fa-regular fa-square checkbox-icon"></i>
+                                <label for="">LG</label>
+                            </a>
+                        </div>
+                        <div class="checkbox frowitem">
+                            <a href="" >
+                                <i class="fa-regular fa-square checkbox-icon"></i>
+                                <label for="">MSI</label>
+                            </a>
+                        </div>
+                        <div class="checkbox frowitem">
+                            <a href="" >
+                                <i class="fa-regular fa-square checkbox-icon"></i>
+                                <label for="">Lenovo</label>
+                            </a>
                         </div>
                     </div>
-                    <div class="card-footer d-flex justify-content-between bg-light border">
-                        <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary mr-1"></i>View Detail</a>
-                        <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-shopping-cart text-primary mr-1"></i>Add To Cart</a>
+                </div>
+                <div class="filter__block">
+                    <div class="filter__title"> Mức giá</div>
+                    <div class="filter__checklist">
+                        <div class="checkbox checkbox-all frowitem">
+                            <a href="" title="Tất cả">
+                                <i class="fa-regular fa-square checkbox-icon"></i>
+                                Tất cả
+                            </a>
+                        </div>
+                        <div class="checkbox frowitem">
+                            <a href="" >
+                                <i class="fa-regular fa-square checkbox-icon"></i>
+                                <label for="">Dưới 10 triệu</label>
+                            </a>
+                        </div>
+                        <div class="checkbox frowitem">
+                            <a href="" >
+                                <i class="fa-regular fa-square checkbox-icon"></i>
+                                <label for="">Từ 10 - 15 triệu</label>
+                            </a>
+                        </div>
+                        <div class="checkbox frowitem">
+                            <a href="" >
+                                <i class="fa-regular fa-square checkbox-icon"></i>
+                                <label for="">Từ 15 - 20 triệu</label>
+                            </a>
+                        </div>
+                        <div class="checkbox frowitem">
+                            <a href="" >
+                                <i class="fa-regular fa-square checkbox-icon"></i>
+                                <label for="">Từ 20 - 25 triệu</label>
+                            </a>
+                        </div>
+                        <div class="checkbox frowitem">
+                            <a href="" >
+                                <i class="fa-regular fa-square checkbox-icon"></i>
+                                <label for="">Trên 25 triệu</label>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                 <div class="filter__block">
+                    <div class="filter__title">Màn hình</div>
+                    <div class="filter__checklist">
+                        <div class="checkbox checkbox-all frowitem">
+                            <a href="" title="Tất cả">
+                                <i class="fa-regular fa-square checkbox-icon"></i>
+                                Tất cả
+                            </a>
+                        </div>
+                        <div class="checkbox frowitem">
+                            <a href="" >
+                                <i class="fa-regular fa-square checkbox-icon"></i>
+                                <label for="">Khoảng 13 inch</label>
+                            </a>
+                        </div>
+                        <div class="checkbox frowitem">
+                            <a href="" >
+                                <i class="fa-regular fa-square checkbox-icon"></i>
+                                <label for="">Khoảng 14 inch</label>
+                            </a>
+                        </div>
+                        <div class="checkbox frowitem">
+                            <a href="" >
+                                <i class="fa-regular fa-square checkbox-icon"></i>
+                                <label for="">Trên 15 inch</label>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-9 tsp-right">
+            <div class="sp-card tspheadbox">
+                <div class="card-header">
+                    <div class="pt-head">
+                        <div class="pt-head__title">Laptop</div>
+                        <span>(262 sản phẩm)</span>
+                    </div>
+                </div>
+                <div class="card-body brand-pt">
+                    <div class="row brand-img">
+                        <div class="owl-carousel vendor-carousel">
+                            <div class="vendor-item">
+                                <a href="">
+                                    <img src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/1/4/637769104385571970_Macbook-Apple@2x.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="vendor-item">
+                                <a href="">
+                                    <img src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/11/22/637732077455069770_Asus@2x.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="vendor-item">
+                                <a href="">
+                                    <img src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/7/15/637619564183327279_HP@2x.png" alt="">
+                                </a>
+                            </div>
+                            <div class="vendor-item">
+                                <a href="">
+                                    <img src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/8/26/637340494666704995_Acer@2x.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="vendor-item">
+                                <a href="">
+                                    <img src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/8/26/637340493755614653_MSI@2x.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="vendor-item">
+                                <a href="">
+                                    <img src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/8/26/637340494668267616_Lenovo@2x.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="vendor-item">
+                                <a href="">
+                                    <img src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/8/26/637340494666861275_Dell@2x.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="vendor-item">
+                                <a href="">
+                                    <img src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/1/4/637769104385571970_Macbook-Apple@2x.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="sp-card oder-lap">
+                <div class="card-body oder-lap-container">
+                    <div class="oder-lap-header">
+                        <div class="oder-lap-title">
+                            <h2>Laptop theo nhu cầu</h2>
+                        </div>
+                    </div>
+                    <div class="oder-lap-list">
+                        <div class="row-flex">
+                            <div class="col5-no">
+                                <div class="oder-lap-item text-center">
+                                    <a href="#">
+                                        <picture class="picture m-10">
+                                            <img src="https://images.fpt.shop/unsafe/fit-in/125x125/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/9/19/637991744177742277_img-gaming.png" alt="">
+                                        </picture>
+                                        <div class="oder-lap-name">Gaming</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col5-no">
+                                <div class="oder-lap-item text-center">
+                                    <a href="#">
+                                        <picture class="picture m-10">
+                                            <img src="https://images.fpt.shop/unsafe/fit-in/125x125/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/9/6/637980583313032986_SV-V%C4%83n%20ph%C3%B2ng.png" alt="">
+                                        </picture>
+                                        <div class="oder-lap-name">Sinh viên - Văn phòng</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col5-no">
+                                <div class="oder-lap-item text-center">
+                                    <a href="#">
+                                        <picture class="picture m-10">
+                                            <img src="https://images.fpt.shop/unsafe/fit-in/125x125/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/9/19/637991745714018004_img-thietkedohoa.png" alt="">
+                                        </picture>
+                                        <div class="oder-lap-name">Thiết kế đồ hoạ</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col5-no">
+                                <div class="oder-lap-item text-center">
+                                    <a href="#">
+                                        <picture class="picture m-10">
+                                            <img src="https://images.fpt.shop/unsafe/fit-in/125x125/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/9/19/637991744678844250_img-mongnhe.png" alt="">
+                                        </picture>
+                                        <div class="oder-lap-name">Mòng nhẹ</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col5-no">
+                                <div class="oder-lap-item text-center">
+                                    <a href="#">
+                                        <picture class="picture m-10">
+                                            <img src="https://images.fpt.shop/unsafe/fit-in/125x125/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/9/19/637991745141508369_img-doanhnhan.png" alt="">
+                                        </picture>
+                                        <div class="oder-lap-name">Doanh nhân</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

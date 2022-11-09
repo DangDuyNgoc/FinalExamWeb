@@ -8,36 +8,33 @@
     <title>Trang Chủ</title>
     <link rel="stylesheet" type="text/csss" href="{{asset('/public/images/favicon.ico')}}">
     @include('front.toplibs')
-    <link rel="stylesheet" href="{{asset('/public/css/main.css')}}">
-    <link rel="stylesheet" href="{{asset('/public/css/footer.css')}}">
+    <link type="text/css" rel="stylesheet" href="{{asset('/public/css/main.css')}}">
+    {{-- <link type="text/css" rel="stylesheet" href="{{asset('/public/css/footer.css')}}"> --}}
 </head>
 <body>
-<div class="container-fluid">
-    <div class="row align-items-center py-3 px-xl-5">
-        @include('front.header')
-    </div><!--Header-->
-</div>
-
-<div class="container-fluid mb-5">
-    <div class="row border-top px-xl-5">
-
-        <div class="">
-            @include('front.topnavbar')
-            @include('front.carousel')
+    <div class="container-fluid">
+        <div class="row align-items-center py-3 px-xl-5">
+            @include('front.header')
         </div>
     </div>
-</div>
+
+    <div class="container-fluid mb-5">
+        <div class="row border-top px-xl-5">
+
+            <div class="">
+                @include('front.topnavbar')
+                @include('front.carousel')
+            </div>
+        </div>
+    </div>
 
 
-@yield('content')
+    @yield('content')
 
-@include('front.brandbar')
+    @include('front.footer')
 
-@include('front.footer')
-
-@include('front.bottomlibs')
+    @include('front.bottomlibs')
 </body>
 
 <script type="text/javascript" src="{{asset('/public/js/index.js')}}"></script>
-<script type="text/javascript" src="{{asset('/public/js/cart.js')}}"></script>
 </html>

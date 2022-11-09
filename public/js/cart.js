@@ -1,5 +1,4 @@
-const $ = document.querySelector.bind(document);
-const $$ = document.querySelectorAll.bind(document);
+
 
 const dropDown = $$('.c-dropdown')
 const showDropMenu = $$('.c-dropdown-menu');
