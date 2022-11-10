@@ -32,7 +32,7 @@
             <div class="collapse" id="collapseLayouts3" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                 <nav class="sb-sidenav-menu-nested nav">
                     <a class="nav-link" href="#">Danh Sách Đơn Hàng</a>
-                    <a class="nav-link" href="{{ route('adminthongke') }}">Thống Kê</a>
+                    <a class="nav-link" href="{{ route('adminThongke') }}">Thống Kê</a>
                 </nav>
             </div>
         </div>

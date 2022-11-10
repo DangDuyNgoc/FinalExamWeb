@@ -1,9 +1,12 @@
 <?php
 
-namespace App\Http\Controllers\admin;
+namespace App\Http\Controllers\client;
+
+use App\Http\Requests\ProductsRequest;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class SanPhamController extends Controller
 {
@@ -12,10 +15,18 @@ class SanPhamController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    // public function index()
+    // {
+    //     return view('admin.sanpham.index', [
+    //         'title' => 'Thêm sản phẩm'
+    //     ]);
+    // }
+
+    public function showProducts()
     {
-        return view('admin.sanpham.index',[
-            'title'=>'Thêm sản phẩm'
+        $products = DB::table('sanphams')->get();
+        return view('home', [
+            'products' => $products,
         ]);
     }
 

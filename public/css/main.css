@@ -1554,7 +1554,7 @@ footer {
     width: 130px;
     height: 28px;
     border-radius: 15px;
-    background-color: #ef8573;
+    background-color: var(--primary-color);
     text-align: center;
     font-size: 18px;
     line-height: 28px;
