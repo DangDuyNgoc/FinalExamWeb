@@ -1208,7 +1208,18 @@ footer {
 .cd-list-tab .btn-group ul li a:hover {
     color: #ffff;
     background: #99a2aa;
+    border: solid 1px #ced4da;
+    box-shadow: none;
 }
+
+.cd-list-tab .btn-group ul li a:focus,
+.cd-list-tab .btn-group ul li a:active {
+    color: #ffff !important;
+    background: #99a2aa !important;
+    border: solid 1px #ced4da !important;
+    box-shadow: none !important;
+}
+
 
 .btn-group .btn:last-child {
     border-top-right-radius: 4px;

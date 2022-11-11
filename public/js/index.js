@@ -6,7 +6,7 @@ const header = $('.header-search');
 
 const notifyBtn = $('.btn-notify');
 const containerNotify = $('.container-notify');
-
+console.log(1223);
 const btnDropdown = $('.cd-dropdown-btn');
 console.log(btnDropdown);
 
@@ -24,6 +24,24 @@ window.addEventListener('load', () => {
         userMenu.classList.toggle('show');
         containerNotify.classList.remove('show');
     });
+
+    // btn group by options
+    const activeOptions = $$('.group-option');
+    const dropdownItems = $$('.dropdown-items');
+
+    console.log(activeOptions);
+    activeOptions.forEach((active, items) => {
+        const dropdownItem = dropdownItems[items];
+
+        active.onclick = function() {
+            $('.group-option.active').classList.remove('active');
+            $('.dropdown-items').classList.remove('active');
+
+            this.classList.add('active');
+            dropdownItem.classList.add('active');
+        }
+    });
+
 });
 
 
