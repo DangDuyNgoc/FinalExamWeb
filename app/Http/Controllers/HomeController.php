@@ -7,14 +7,9 @@ use Illuminate\Support\Facades\DB;
 
 class HomeController extends Controller
 {
-    // public function index(){
-    //     return view('home');
-    // }
-
-    public function showProducts()
+    public function index()
     {
-        $products = DB::table('sanphams')->get();
-        //$products = DB::table('productsanphams')->paginate(5);
-        return view('home', compact(var_name: 'products'));
+        $products = DB::table('products')->get();
+        return view('home', ['products' => $products]);
     }
 }

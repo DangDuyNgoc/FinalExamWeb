@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class DanhMucRequest extends FormRequest
+class ProductsRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,14 +24,14 @@ class DanhMucRequest extends FormRequest
     public function rules()
     {
         return [
-            'tendm'=>'required'
+            'tendm' => 'required'
         ];
     }
 
     public function messages()
     {
         return [
-            'tendm.required'=>'Vui lòng nhập danh mục sản phẩm!'
+            'tendm.required' => 'Vui lòng nhập danh mục sản phẩm!'
         ];
     }
 }

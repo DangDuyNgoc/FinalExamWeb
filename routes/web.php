@@ -11,10 +11,9 @@ use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('home', [HomeController::class, 'showProducts']);
+    return redirect('home');
 });
-
-Route::get('/products', action: 'ProductsController@index');
+Route::get('/', [HomeController::class, 'index']);
 
 Route::name('admin')->group(function () {
     Route::prefix('admin')->group(function () {

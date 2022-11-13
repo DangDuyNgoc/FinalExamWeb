@@ -1,13 +1,16 @@
 <?php
+
 namespace App\Http\Controllers\admin;
+
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 class DashController extends Controller
 {
-    public function index(){
-        return view('admin.dash',[
-            'title'=>'Quản trị nội dung - Công ty ABC'
+    public function index()
+    {
+        return view('admin.dash', [
+            'title' => 'Quản trị nội dung - Công ty ABC'
         ]);
     }
 }

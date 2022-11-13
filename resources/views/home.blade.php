@@ -290,29 +290,29 @@
                         </div>
                     </div>
                     {{-- @for($i=1; $i <=6; $i++) --}}
-                    @foreach( $products as $product )
-                        <div class="cd-product-wrapper">
+                    <div class="cd-product-wrapper">
+                        @foreach( $products as $product )
                             {{-- <div class="cd-product pd-sale">
-                                    <div class="cd-product__img" >
-                                        <a href="">
-                                            <img src="https://images.fpt.shop/unsafe/fit-in/240x215/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/10/20/637703173013037856_macbook-pro-14-2021-xam-dd.jpg"
-                                            alt="MacBook Pro 14 2021 M1 Pro Ram 32GB" height="215">
-                                        </a>
-                                        <div class="cd-product__label">
-                                            <span class="badge badge-installment">Trả góp 0%</span>
-                                            <span class="badge badge-discount">Giảm 6.000.000đ</span>
+                                <div class="cd-product__img" >
+                                    <a href="">
+                                        <img src="https://images.fpt.shop/unsafe/fit-in/240x215/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/10/20/637703173013037856_macbook-pro-14-2021-xam-dd.jpg"
+                                        alt="MacBook Pro 14 2021 M1 Pro Ram 32GB" height="215">
+                                    </a>
+                                    <div class="cd-product__label">
+                                        <span class="badge badge-installment">Trả góp 0%</span>
+                                        <span class="badge badge-discount">Giảm 6.000.000đ</span>
+                                    </div>
+                                </div>
+                                <div class="cd-product__infor">
+                                    <h3>
+                                        <a href="" class="cd-product__name">MacBook Pro 14" 2021 M1 Pro Ram 32GB</a>
+                                    </h3>
+                                    <div class="cd-product__show-promo">
+                                        <div class="cd-product__price">23.690.000₫</div>
+                                        <div class="strike-price">
+                                            <strike>63.990.000₫</strike>
                                         </div>
                                     </div>
-                                    <div class="cd-product__infor">
-                                        <h3>
-                                            <a href="" class="cd-product__name">MacBook Pro 14" 2021 M1 Pro Ram 32GB</a>
-                                        </h3>
-                                        <div class="cd-product__show-promo">
-                                            <div class="cd-product__price">23.690.000₫</div>
-                                            <div class="strike-price">
-                                                <strike>63.990.000₫</strike>
-                                            </div>
-                                        </div>
                                         <div class="cd-product__btn">
                                             <a href="" class="btn btn-sm btn-main btn-primary btn-add-to-cart">
                                                 <svg enable-background="new 0 0 15 15"
@@ -333,269 +333,271 @@
                                             </a>
                                             <a href="" class="btn btn-sm btn-main btn-primary btn-solid-primary">Mua ngay</a>
                                         </div>
-                                    </div>
+                                </div>
                             </div> --}}
-                                <div class="cd-product pd-sale">
-                                    <div class="cd-product__img" >
-                                        <a href="">
-                                            <img src="{{ $product->img_path }}"
-                                            alt="MacBook Pro 14 2021 M1 Pro Ram 32GB" height="215">
-                                        </a>
-                                        <div class="cd-product__label">
-                                            <span class="badge badge-installment">Trả góp 0%</span>
-                                            <span class="badge badge-discount">Giảm 6.000.000đ</span>
-                                        </div>
-                                    </div>
-                                    <div class="cd-product__infor">
-                                        <h3>
-                                            <a href="" class="cd-product__name">{{$product->name}}</a>
-                                        </h3>
-                                        <div class="cd-product__show-promo">
-                                            <div class="cd-product__price">{{$product->price}}₫</div>
-                                            <div class="strike-price">
-                                                <strike>{{$product->old_price}}₫</strike>
-                                            </div>
-                                        </div>
-                                        <div class="cd-product__btn">
-                                            <a href="" class="btn btn-sm btn-main btn-primary btn-add-to-cart">
-                                                <svg enable-background="new 0 0 15 15"
-                                                    viewBox="0 0 15 15" x="0" y="0"
-                                                    class="svg-icon icon-add-to-cart">
-                                                    <g><g>
-                                                    <polyline fill="none" points=".5 .5 2.7 .5 5.2 11 12.4 11 14.5 3.5 3.7 3.5"
-                                                        stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                        stroke-miterlimit="10">
-                                                    </polyline>
-                                                    <circle cx="6" cy="13.5" r="1" stroke="none"></circle>
-                                                    <circle cx="11.5" cy="13.5" r="1" stroke="none"></circle>
-                                                    </g><line fill="none" stroke-linecap="round" stroke-miterlimit="10" x1="7.5" x2="10.5" y1="7" y2="7"></line>
-                                                    <line fill="none" stroke-linecap="round" stroke-miterlimit="10" x1="9" x2="9" y1="8.5" y2="5.5"></line></g>
-                                                </svg>
-                                                <span>Add to cart</span>
-                                            </a>
-                                            <a href="" class="btn btn-sm btn-main btn-primary btn-solid-primary">Mua ngay</a>
-                                        </div>
+                            <div class="cd-product pd-sale">
+                                <div class="cd-product__img" >
+                                    <a href="">
+                                        <img src="{{$product->img_path}}"
+                                        alt="MacBook Pro 14 2021 M1 Pro Ram 32GB" height="215">
+                                    </a>
+                                    <div class="cd-product__label">
+                                        <span class="badge badge-installment">Trả góp 0%</span>
+                                        <span class="badge badge-discount">{{$product->discount}}đ</span>
                                     </div>
                                 </div>
-                                {{-- <div class="cd-product pd-sale">
-                                    <div class="cd-product__img" >
-                                        <a href="">
-                                            <img src="https://images.fpt.shop/unsafe/fit-in/240x215/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/10/20/637703173013037856_macbook-pro-14-2021-xam-dd.jpg"
-                                            alt="MacBook Pro 14 2021 M1 Pro Ram 32GB" height="215">
-                                        </a>
-                                        <div class="cd-product__label">
-                                            <span class="badge badge-installment">Trả góp 0%</span>
-                                            <span class="badge badge-discount">Giảm 6.000.000đ</span>
+                                <div class="cd-product__infor">
+                                    <h3>
+                                        <a href="" class="cd-product__name">{{$product->name}}</a>
+                                    </h3>
+                                    <div class="cd-product__show-promo">
+                                        <div class="cd-product__price">{{$product->price}}.000₫</div>
+                                        <div class="strike-price">
+                                            <strike>{{$product->old_price}}.000₫</strike>
                                         </div>
                                     </div>
-                                    <div class="cd-product__infor">
-                                        <h3>
-                                            <a href="" class="cd-product__name">MacBook Pro 14" 2021 M1 Pro Ram 32GB</a>
-                                        </h3>
-                                        <div class="cd-product__show-promo">
-                                            <div class="cd-product__price">23.690.000₫</div>
-                                            <div class="strike-price">
-                                                <strike>63.990.000₫</strike>
-                                            </div>
-                                        </div>
-                                        <div class="cd-product__btn">
-                                            <a href="" class="btn btn-sm btn-main btn-primary btn-add-to-cart">
-                                                <svg enable-background="new 0 0 15 15"
-                                                    viewBox="0 0 15 15" x="0" y="0"
-                                                    class="svg-icon icon-add-to-cart">
-                                                    <g><g>
-                                                    <polyline fill="none" points=".5 .5 2.7 .5 5.2 11 12.4 11 14.5 3.5 3.7 3.5"
-                                                        stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                        stroke-miterlimit="10">
-                                                    </polyline>
-                                                    <circle cx="6" cy="13.5" r="1" stroke="none"></circle>
-                                                    <circle cx="11.5" cy="13.5" r="1" stroke="none"></circle>
-                                                    </g><line fill="none" stroke-linecap="round" stroke-miterlimit="10" x1="7.5" x2="10.5" y1="7" y2="7"></line>
-                                                    <line fill="none" stroke-linecap="round" stroke-miterlimit="10" x1="9" x2="9" y1="8.5" y2="5.5"></line></g>
-                                                </svg>
-                                                <span>Add to cart</span>
-                                            </a>
-                                            <a href="" class="btn btn-sm btn-main btn-primary btn-solid-primary">Mua ngay</a>
-                                        </div>
+                                    <div class="cd-product__btn">
+                                        <a href="" class="btn btn-sm btn-main btn-primary btn-add-to-cart">
+                                            <svg enable-background="new 0 0 15 15"
+                                                viewBox="0 0 15 15" x="0" y="0"
+                                                class="svg-icon icon-add-to-cart">
+                                                <g><g>
+                                                <polyline fill="none" points=".5 .5 2.7 .5 5.2 11 12.4 11 14.5 3.5 3.7 3.5"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    stroke-miterlimit="10">
+                                                </polyline>
+                                                <circle cx="6" cy="13.5" r="1" stroke="none"></circle>
+                                                <circle cx="11.5" cy="13.5" r="1" stroke="none"></circle>
+                                                </g><line fill="none" stroke-linecap="round" stroke-miterlimit="10" x1="7.5" x2="10.5" y1="7" y2="7"></line>
+                                                <line fill="none" stroke-linecap="round" stroke-miterlimit="10" x1="9" x2="9" y1="8.5" y2="5.5"></line></g>
+                                            </svg>
+                                            <span>Add to cart</span>
+                                        </a>
+                                        <a href="" class="btn btn-sm btn-main btn-primary btn-solid-primary">Mua ngay</a>
                                     </div>
                                 </div>
-                                <div class="cd-product pd-sale">
-                                    <div class="cd-product__img" >
-                                        <a href="">
-                                            <img src="https://images.fpt.shop/unsafe/fit-in/240x215/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/10/20/637703173013037856_macbook-pro-14-2021-xam-dd.jpg"
-                                            alt="MacBook Pro 14 2021 M1 Pro Ram 32GB" height="215">
-                                        </a>
-                                        <div class="cd-product__label">
-                                            <span class="badge badge-installment">Trả góp 0%</span>
-                                            <span class="badge badge-discount">Giảm 6.000.000đ</span>
-                                        </div>
-                                    </div>
-                                    <div class="cd-product__infor">
-                                        <h3>
-                                            <a href="" class="cd-product__name">MacBook Pro 14" 2021 M1 Pro Ram 32GB</a>
-                                        </h3>
-                                        <div class="cd-product__show-promo">
-                                            <div class="cd-product__price">23.690.000₫</div>
-                                            <div class="strike-price">
-                                                <strike>63.990.000₫</strike>
-                                            </div>
-                                        </div>
-                                        <div class="cd-product__btn">
-                                            <a href="" class="btn btn-sm btn-main btn-primary btn-add-to-cart">
-                                                <svg enable-background="new 0 0 15 15"
-                                                    viewBox="0 0 15 15" x="0" y="0"
-                                                    class="svg-icon icon-add-to-cart">
-                                                    <g><g>
-                                                    <polyline fill="none" points=".5 .5 2.7 .5 5.2 11 12.4 11 14.5 3.5 3.7 3.5"
-                                                        stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                        stroke-miterlimit="10">
-                                                    </polyline>
-                                                    <circle cx="6" cy="13.5" r="1" stroke="none"></circle>
-                                                    <circle cx="11.5" cy="13.5" r="1" stroke="none"></circle>
-                                                    </g><line fill="none" stroke-linecap="round" stroke-miterlimit="10" x1="7.5" x2="10.5" y1="7" y2="7"></line>
-                                                    <line fill="none" stroke-linecap="round" stroke-miterlimit="10" x1="9" x2="9" y1="8.5" y2="5.5"></line></g>
-                                                </svg>
-                                                <span>Add to cart</span>
-                                            </a>
-                                            <a href="" class="btn btn-sm btn-main btn-primary btn-solid-primary">Mua ngay</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="cd-product pd-sale">
-                                    <div class="cd-product__img" >
-                                        <a href="">
-                                            <img src="https://images.fpt.shop/unsafe/fit-in/240x215/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/10/20/637703173013037856_macbook-pro-14-2021-xam-dd.jpg"
-                                            alt="MacBook Pro 14 2021 M1 Pro Ram 32GB" height="215">
-                                        </a>
-                                        <div class="cd-product__label">
-                                            <span class="badge badge-installment">Trả góp 0%</span>
-                                            <span class="badge badge-discount">Giảm 6.000.000đ</span>
-                                        </div>
-                                    </div>
-                                    <div class="cd-product__infor">
-                                        <h3>
-                                            <a href="" class="cd-product__name">MacBook Pro 14" 2021 M1 Pro Ram 32GB</a>
-                                        </h3>
-                                        <div class="cd-product__show-promo">
-                                            <div class="cd-product__price">23.690.000₫</div>
-                                            <div class="strike-price">
-                                                <strike>63.990.000₫</strike>
-                                            </div>
-                                        </div>
-                                        <div class="cd-product__btn">
-                                            <a href="" class="btn btn-sm btn-main btn-primary btn-add-to-cart">
-                                                <svg enable-background="new 0 0 15 15"
-                                                    viewBox="0 0 15 15" x="0" y="0"
-                                                    class="svg-icon icon-add-to-cart">
-                                                    <g><g>
-                                                    <polyline fill="none" points=".5 .5 2.7 .5 5.2 11 12.4 11 14.5 3.5 3.7 3.5"
-                                                        stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                        stroke-miterlimit="10">
-                                                    </polyline>
-                                                    <circle cx="6" cy="13.5" r="1" stroke="none"></circle>
-                                                    <circle cx="11.5" cy="13.5" r="1" stroke="none"></circle>
-                                                    </g><line fill="none" stroke-linecap="round" stroke-miterlimit="10" x1="7.5" x2="10.5" y1="7" y2="7"></line>
-                                                    <line fill="none" stroke-linecap="round" stroke-miterlimit="10" x1="9" x2="9" y1="8.5" y2="5.5"></line></g>
-                                                </svg>
-                                                <span>Add to cart</span>
-                                            </a>
-                                            <a href="" class="btn btn-sm btn-main btn-primary btn-solid-primary">Mua ngay</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="cd-product pd-sale">
-                                    <div class="cd-product__img" >
-                                        <a href="">
-                                            <img src="https://images.fpt.shop/unsafe/fit-in/240x215/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/10/20/637703173013037856_macbook-pro-14-2021-xam-dd.jpg"
-                                            alt="MacBook Pro 14 2021 M1 Pro Ram 32GB" height="215">
-                                        </a>
-                                        <div class="cd-product__label">
-                                            <span class="badge badge-installment">Trả góp 0%</span>
-                                            <span class="badge badge-discount">Giảm 6.000.000đ</span>
-                                        </div>
-                                    </div>
-                                    <div class="cd-product__infor">
-                                        <h3>
-                                            <a href="" class="cd-product__name">MacBook Pro 14" 2021 M1 Pro Ram 32GB</a>
-                                        </h3>
-                                        <div class="cd-product__show-promo">
-                                            <div class="cd-product__price">23.690.000₫</div>
-                                            <div class="strike-price">
-                                                <strike>63.990.000₫</strike>
-                                            </div>
-                                        </div>
-                                        <div class="cd-product__btn">
-                                            <a href="" class="btn btn-sm btn-main btn-primary btn-add-to-cart">
-                                                <svg enable-background="new 0 0 15 15"
-                                                    viewBox="0 0 15 15" x="0" y="0"
-                                                    class="svg-icon icon-add-to-cart">
-                                                    <g><g>
-                                                    <polyline fill="none" points=".5 .5 2.7 .5 5.2 11 12.4 11 14.5 3.5 3.7 3.5"
-                                                        stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                        stroke-miterlimit="10">
-                                                    </polyline>
-                                                    <circle cx="6" cy="13.5" r="1" stroke="none"></circle>
-                                                    <circle cx="11.5" cy="13.5" r="1" stroke="none"></circle>
-                                                    </g><line fill="none" stroke-linecap="round" stroke-miterlimit="10" x1="7.5" x2="10.5" y1="7" y2="7"></line>
-                                                    <line fill="none" stroke-linecap="round" stroke-miterlimit="10" x1="9" x2="9" y1="8.5" y2="5.5"></line></g>
-                                                </svg>
-                                                <span>Add to cart</span>
-                                            </a>
-                                            <a href="" class="btn btn-sm btn-main btn-primary btn-solid-primary">Mua ngay</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="cd-product pd-sale">
-                                    <div class="cd-product__img" >
-                                        <a href="">
-                                            <img src="https://images.fpt.shop/unsafe/fit-in/240x215/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/10/20/637703173013037856_macbook-pro-14-2021-xam-dd.jpg"
-                                            alt="MacBook Pro 14 2021 M1 Pro Ram 32GB" height="215">
-                                        </a>
-                                        <div class="cd-product__label">
-                                            <span class="badge badge-installment">Trả góp 0%</span>
-                                            <span class="badge badge-discount">Giảm 6.000.000đ</span>
-                                        </div>
-                                    </div>
-                                    <div class="cd-product__infor">
-                                        <h3>
-                                            <a href="" class="cd-product__name">MacBook Pro 14" 2021 M1 Pro Ram 32GB</a>
-                                        </h3>
-                                        <div class="cd-product__show-promo">
-                                            <div class="cd-product__price">23.690.000₫</div>
-                                            <div class="strike-price">
-                                                <strike>63.990.000₫</strike>
-                                            </div>
-                                        </div>
-                                        <div class="cd-product__btn">
-                                            <a href="" class="btn btn-sm btn-main btn-primary btn-add-to-cart">
-                                                <svg enable-background="new 0 0 15 15"
-                                                    viewBox="0 0 15 15" x="0" y="0"
-                                                    class="svg-icon icon-add-to-cart">
-                                                    <g><g>
-                                                    <polyline fill="none" points=".5 .5 2.7 .5 5.2 11 12.4 11 14.5 3.5 3.7 3.5"
-                                                        stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                        stroke-miterlimit="10">
-                                                    </polyline>
-                                                    <circle cx="6" cy="13.5" r="1" stroke="none"></circle>
-                                                    <circle cx="11.5" cy="13.5" r="1" stroke="none"></circle>
-                                                    </g><line fill="none" stroke-linecap="round" stroke-miterlimit="10" x1="7.5" x2="10.5" y1="7" y2="7"></line>
-                                                    <line fill="none" stroke-linecap="round" stroke-miterlimit="10" x1="9" x2="9" y1="8.5" y2="5.5"></line></g>
-                                                </svg>
-                                                <span>Add to cart</span>
-                                            </a>
-                                            <a href="" class="btn btn-sm btn-main btn-primary btn-solid-primary">Mua ngay</a>
-                                        </div>
-                                    </div>
-                                </div> --}}
                             </div>
+                            @endforeach
+
+                            {{-- <div class="cd-product pd-sale">
+                                <div class="cd-product__img" >
+                                    <a href="">
+                                        <img src="https://images.fpt.shop/unsafe/fit-in/240x215/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/10/20/637703173013037856_macbook-pro-14-2021-xam-dd.jpg"
+                                        alt="MacBook Pro 14 2021 M1 Pro Ram 32GB" height="215">
+                                    </a>
+                                    <div class="cd-product__label">
+                                        <span class="badge badge-installment">Trả góp 0%</span>
+                                        <span class="badge badge-discount">Giảm 6.000.000đ</span>
+                                    </div>
+                                </div>
+                                <div class="cd-product__infor">
+                                    <h3>
+                                        <a href="" class="cd-product__name">MacBook Pro 14" 2021 M1 Pro Ram 32GB</a>
+                                    </h3>
+                                    <div class="cd-product__show-promo">
+                                        <div class="cd-product__price">23.690.000₫</div>
+                                        <div class="strike-price">
+                                            <strike>63.990.000₫</strike>
+                                        </div>
+                                    </div>
+                                    <div class="cd-product__btn">
+                                        <a href="" class="btn btn-sm btn-main btn-primary btn-add-to-cart">
+                                            <svg enable-background="new 0 0 15 15"
+                                                viewBox="0 0 15 15" x="0" y="0"
+                                                class="svg-icon icon-add-to-cart">
+                                                <g><g>
+                                                <polyline fill="none" points=".5 .5 2.7 .5 5.2 11 12.4 11 14.5 3.5 3.7 3.5"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    stroke-miterlimit="10">
+                                                </polyline>
+                                                <circle cx="6" cy="13.5" r="1" stroke="none"></circle>
+                                                <circle cx="11.5" cy="13.5" r="1" stroke="none"></circle>
+                                                </g><line fill="none" stroke-linecap="round" stroke-miterlimit="10" x1="7.5" x2="10.5" y1="7" y2="7"></line>
+                                                <line fill="none" stroke-linecap="round" stroke-miterlimit="10" x1="9" x2="9" y1="8.5" y2="5.5"></line></g>
+                                            </svg>
+                                            <span>Add to cart</span>
+                                        </a>
+                                        <a href="" class="btn btn-sm btn-main btn-primary btn-solid-primary">Mua ngay</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cd-product pd-sale">
+                                <div class="cd-product__img" >
+                                    <a href="">
+                                        <img src="https://images.fpt.shop/unsafe/fit-in/240x215/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/10/20/637703173013037856_macbook-pro-14-2021-xam-dd.jpg"
+                                        alt="MacBook Pro 14 2021 M1 Pro Ram 32GB" height="215">
+                                    </a>
+                                    <div class="cd-product__label">
+                                        <span class="badge badge-installment">Trả góp 0%</span>
+                                        <span class="badge badge-discount">Giảm 6.000.000đ</span>
+                                    </div>
+                                </div>
+                                <div class="cd-product__infor">
+                                    <h3>
+                                        <a href="" class="cd-product__name">MacBook Pro 14" 2021 M1 Pro Ram 32GB</a>
+                                    </h3>
+                                    <div class="cd-product__show-promo">
+                                        <div class="cd-product__price">23.690.000₫</div>
+                                        <div class="strike-price">
+                                            <strike>63.990.000₫</strike>
+                                        </div>
+                                    </div>
+                                    <div class="cd-product__btn">
+                                        <a href="" class="btn btn-sm btn-main btn-primary btn-add-to-cart">
+                                            <svg enable-background="new 0 0 15 15"
+                                                viewBox="0 0 15 15" x="0" y="0"
+                                                class="svg-icon icon-add-to-cart">
+                                                <g><g>
+                                                <polyline fill="none" points=".5 .5 2.7 .5 5.2 11 12.4 11 14.5 3.5 3.7 3.5"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    stroke-miterlimit="10">
+                                                </polyline>
+                                                <circle cx="6" cy="13.5" r="1" stroke="none"></circle>
+                                                <circle cx="11.5" cy="13.5" r="1" stroke="none"></circle>
+                                                </g><line fill="none" stroke-linecap="round" stroke-miterlimit="10" x1="7.5" x2="10.5" y1="7" y2="7"></line>
+                                                <line fill="none" stroke-linecap="round" stroke-miterlimit="10" x1="9" x2="9" y1="8.5" y2="5.5"></line></g>
+                                            </svg>
+                                            <span>Add to cart</span>
+                                        </a>
+                                        <a href="" class="btn btn-sm btn-main btn-primary btn-solid-primary">Mua ngay</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cd-product pd-sale">
+                                <div class="cd-product__img" >
+                                    <a href="">
+                                        <img src="https://images.fpt.shop/unsafe/fit-in/240x215/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/10/20/637703173013037856_macbook-pro-14-2021-xam-dd.jpg"
+                                        alt="MacBook Pro 14 2021 M1 Pro Ram 32GB" height="215">
+                                    </a>
+                                    <div class="cd-product__label">
+                                        <span class="badge badge-installment">Trả góp 0%</span>
+                                        <span class="badge badge-discount">Giảm 6.000.000đ</span>
+                                    </div>
+                                </div>
+                                <div class="cd-product__infor">
+                                    <h3>
+                                        <a href="" class="cd-product__name">MacBook Pro 14" 2021 M1 Pro Ram 32GB</a>
+                                    </h3>
+                                    <div class="cd-product__show-promo">
+                                        <div class="cd-product__price">23.690.000₫</div>
+                                        <div class="strike-price">
+                                            <strike>63.990.000₫</strike>
+                                        </div>
+                                    </div>
+                                    <div class="cd-product__btn">
+                                        <a href="" class="btn btn-sm btn-main btn-primary btn-add-to-cart">
+                                            <svg enable-background="new 0 0 15 15"
+                                                viewBox="0 0 15 15" x="0" y="0"
+                                                class="svg-icon icon-add-to-cart">
+                                                <g><g>
+                                                <polyline fill="none" points=".5 .5 2.7 .5 5.2 11 12.4 11 14.5 3.5 3.7 3.5"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    stroke-miterlimit="10">
+                                                </polyline>
+                                                <circle cx="6" cy="13.5" r="1" stroke="none"></circle>
+                                                <circle cx="11.5" cy="13.5" r="1" stroke="none"></circle>
+                                                </g><line fill="none" stroke-linecap="round" stroke-miterlimit="10" x1="7.5" x2="10.5" y1="7" y2="7"></line>
+                                                <line fill="none" stroke-linecap="round" stroke-miterlimit="10" x1="9" x2="9" y1="8.5" y2="5.5"></line></g>
+                                            </svg>
+                                            <span>Add to cart</span>
+                                        </a>
+                                        <a href="" class="btn btn-sm btn-main btn-primary btn-solid-primary">Mua ngay</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cd-product pd-sale">
+                                <div class="cd-product__img" >
+                                    <a href="">
+                                        <img src="https://images.fpt.shop/unsafe/fit-in/240x215/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/10/20/637703173013037856_macbook-pro-14-2021-xam-dd.jpg"
+                                        alt="MacBook Pro 14 2021 M1 Pro Ram 32GB" height="215">
+                                    </a>
+                                    <div class="cd-product__label">
+                                        <span class="badge badge-installment">Trả góp 0%</span>
+                                        <span class="badge badge-discount">Giảm 6.000.000đ</span>
+                                    </div>
+                                </div>
+                                <div class="cd-product__infor">
+                                    <h3>
+                                        <a href="" class="cd-product__name">MacBook Pro 14" 2021 M1 Pro Ram 32GB</a>
+                                    </h3>
+                                    <div class="cd-product__show-promo">
+                                        <div class="cd-product__price">23.690.000₫</div>
+                                        <div class="strike-price">
+                                            <strike>63.990.000₫</strike>
+                                        </div>
+                                    </div>
+                                    <div class="cd-product__btn">
+                                        <a href="" class="btn btn-sm btn-main btn-primary btn-add-to-cart">
+                                            <svg enable-background="new 0 0 15 15"
+                                                viewBox="0 0 15 15" x="0" y="0"
+                                                class="svg-icon icon-add-to-cart">
+                                                <g><g>
+                                                <polyline fill="none" points=".5 .5 2.7 .5 5.2 11 12.4 11 14.5 3.5 3.7 3.5"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    stroke-miterlimit="10">
+                                                </polyline>
+                                                <circle cx="6" cy="13.5" r="1" stroke="none"></circle>
+                                                <circle cx="11.5" cy="13.5" r="1" stroke="none"></circle>
+                                                </g><line fill="none" stroke-linecap="round" stroke-miterlimit="10" x1="7.5" x2="10.5" y1="7" y2="7"></line>
+                                                <line fill="none" stroke-linecap="round" stroke-miterlimit="10" x1="9" x2="9" y1="8.5" y2="5.5"></line></g>
+                                            </svg>
+                                            <span>Add to cart</span>
+                                        </a>
+                                        <a href="" class="btn btn-sm btn-main btn-primary btn-solid-primary">Mua ngay</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cd-product pd-sale">
+                                <div class="cd-product__img" >
+                                    <a href="">
+                                        <img src="https://images.fpt.shop/unsafe/fit-in/240x215/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/10/20/637703173013037856_macbook-pro-14-2021-xam-dd.jpg"
+                                        alt="MacBook Pro 14 2021 M1 Pro Ram 32GB" height="215">
+                                    </a>
+                                    <div class="cd-product__label">
+                                        <span class="badge badge-installment">Trả góp 0%</span>
+                                        <span class="badge badge-discount">Giảm 6.000.000đ</span>
+                                    </div>
+                                </div>
+                                <div class="cd-product__infor">
+                                    <h3>
+                                        <a href="" class="cd-product__name">MacBook Pro 14" 2021 M1 Pro Ram 32GB</a>
+                                    </h3>
+                                    <div class="cd-product__show-promo">
+                                        <div class="cd-product__price">23.690.000₫</div>
+                                        <div class="strike-price">
+                                            <strike>63.990.000₫</strike>
+                                        </div>
+                                    </div>
+                                    <div class="cd-product__btn">
+                                        <a href="" class="btn btn-sm btn-main btn-primary btn-add-to-cart">
+                                            <svg enable-background="new 0 0 15 15"
+                                                viewBox="0 0 15 15" x="0" y="0"
+                                                class="svg-icon icon-add-to-cart">
+                                                <g><g>
+                                                <polyline fill="none" points=".5 .5 2.7 .5 5.2 11 12.4 11 14.5 3.5 3.7 3.5"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    stroke-miterlimit="10">
+                                                </polyline>
+                                                <circle cx="6" cy="13.5" r="1" stroke="none"></circle>
+                                                <circle cx="11.5" cy="13.5" r="1" stroke="none"></circle>
+                                                </g><line fill="none" stroke-linecap="round" stroke-miterlimit="10" x1="7.5" x2="10.5" y1="7" y2="7"></line>
+                                                <line fill="none" stroke-linecap="round" stroke-miterlimit="10" x1="9" x2="9" y1="8.5" y2="5.5"></line></g>
+                                            </svg>
+                                            <span>Add to cart</span>
+                                        </a>
+                                        <a href="" class="btn btn-sm btn-main btn-primary btn-solid-primary">Mua ngay</a>
+                                    </div>
+                                </div>
+                            </div>
+                            </div> --}}
                         </div>
-                    @endforeach
+
                 </div>
                 {{-- @endfor --}}
         </div>

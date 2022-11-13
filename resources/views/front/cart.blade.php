@@ -28,8 +28,6 @@
 
 @yield('content')
 
-@include('front.brandbar')
-
 @include('front.footer')
 
 @include('front.bottomlibs')
